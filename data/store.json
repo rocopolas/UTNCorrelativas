@@ -1,16 +1,16 @@
 {
   "plan": {
-    "sourceFile": "/home/rocopolas/Documentos/Visualizador_de_correlativas/pdf/Sistemas - Régimen de Correlatividades y Equivalencias.pdf",
-    "source": "pdftotext",
-    "importedAt": "2026-04-02T03:32:23.204Z",
+    "sourceFile": "/home/rocopolas/Documentos/Visualizador_de_correlativas/pdf/Química - Régimen de Correlatividades y Equivalencias Actual.pdf",
+    "source": "pdf-parse",
+    "importedAt": "2026-04-02T03:37:58.656Z",
     "stats": {
-      "subjectCount": 36,
-      "edgeCount": 74
+      "subjectCount": 39,
+      "edgeCount": 129
     },
     "subjects": [
       {
         "id": 1,
-        "name": "Análisis Matemático I",
+        "name": "Introducción a la Ingeniería Química",
         "prerequisites": {
           "cursadas": [],
           "aprobadas": []
@@ -18,7 +18,7 @@
       },
       {
         "id": 2,
-        "name": "Álgebra y Geometría Analítica",
+        "name": "Ingeniería y Sociedad",
         "prerequisites": {
           "cursadas": [],
           "aprobadas": []
@@ -26,7 +26,7 @@
       },
       {
         "id": 3,
-        "name": "Física I",
+        "name": "Álgebra y Geometría Analítica",
         "prerequisites": {
           "cursadas": [],
           "aprobadas": []
@@ -34,7 +34,7 @@
       },
       {
         "id": 4,
-        "name": "Inglés I",
+        "name": "Análisis Matemático I",
         "prerequisites": {
           "cursadas": [],
           "aprobadas": []
@@ -42,7 +42,7 @@
       },
       {
         "id": 5,
-        "name": "Lógica y Estructuras Discretas",
+        "name": "Física I",
         "prerequisites": {
           "cursadas": [],
           "aprobadas": []
@@ -50,7 +50,7 @@
       },
       {
         "id": 6,
-        "name": "Algoritmos y Estructuras de Datos",
+        "name": "Química",
         "prerequisites": {
           "cursadas": [],
           "aprobadas": []
@@ -58,7 +58,7 @@
       },
       {
         "id": 7,
-        "name": "Arquitectura de Computadoras",
+        "name": "Sistemas de Representación",
         "prerequisites": {
           "cursadas": [],
           "aprobadas": []
@@ -66,7 +66,7 @@
       },
       {
         "id": 8,
-        "name": "Sistemas y Procesos de Negocio",
+        "name": "Fundamentos de Informática",
         "prerequisites": {
           "cursadas": [],
           "aprobadas": []
@@ -74,7 +74,61 @@
       },
       {
         "id": 9,
-        "name": "Análisis Matemático II",
+        "name": "Introducción a Equipos y Procesos",
+        "prerequisites": {
+          "cursadas": [
+            1,
+            6
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 10,
+        "name": "Probabilidad y Estadística",
+        "prerequisites": {
+          "cursadas": [
+            3,
+            4
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 11,
+        "name": "Química Inorgánica 6 -- 12 Análisis Matemático II",
+        "prerequisites": {
+          "cursadas": [
+            3,
+            4
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 13,
+        "name": "Física II",
+        "prerequisites": {
+          "cursadas": [
+            4,
+            5
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 14,
+        "name": "Química Orgánica",
+        "prerequisites": {
+          "cursadas": [
+            6
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 15,
+        "name": "Legislación",
         "prerequisites": {
           "cursadas": [
             1,
@@ -84,27 +138,155 @@
         }
       },
       {
-        "id": 10,
-        "name": "Física II",
-        "prerequisites": {
-          "cursadas": [
-            1,
-            3
-          ],
-          "aprobadas": []
-        }
-      },
-      {
-        "id": 11,
-        "name": "Ingeniería y Sociedad",
+        "id": 16,
+        "name": "Inglés I",
         "prerequisites": {
           "cursadas": [],
           "aprobadas": []
         }
       },
       {
-        "id": 12,
-        "name": "Inglés II",
+        "id": 17,
+        "name": "Balances de Masa y Energía",
+        "prerequisites": {
+          "cursadas": [
+            6,
+            7,
+            8,
+            9,
+            13
+          ],
+          "aprobadas": [
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "id": 18,
+        "name": "Termodinámica",
+        "prerequisites": {
+          "cursadas": [
+            11,
+            12,
+            13
+          ],
+          "aprobadas": [
+            4,
+            6
+          ]
+        }
+      },
+      {
+        "id": 19,
+        "name": "Matemática Superior Aplicada",
+        "prerequisites": {
+          "cursadas": [
+            12
+          ],
+          "aprobadas": [
+            3,
+            4
+          ]
+        }
+      },
+      {
+        "id": 20,
+        "name": "Ciencia de los Materiales",
+        "prerequisites": {
+          "cursadas": [
+            9,
+            11,
+            14
+          ],
+          "aprobadas": [
+            1,
+            6
+          ]
+        }
+      },
+      {
+        "id": 21,
+        "name": "Fisicoquímica",
+        "prerequisites": {
+          "cursadas": [
+            9,
+            12,
+            13
+          ],
+          "aprobadas": [
+            3,
+            4,
+            6
+          ]
+        }
+      },
+      {
+        "id": 22,
+        "name": "Fenómenos de Transporte",
+        "prerequisites": {
+          "cursadas": [
+            9,
+            12,
+            13
+          ],
+          "aprobadas": [
+            3,
+            4,
+            6
+          ]
+        }
+      },
+      {
+        "id": 23,
+        "name": "Química Analítica",
+        "prerequisites": {
+          "cursadas": [
+            10,
+            11,
+            14
+          ],
+          "aprobadas": [
+            2,
+            6
+          ]
+        }
+      },
+      {
+        "id": 24,
+        "name": "Microbiología y Química Biológica",
+        "prerequisites": {
+          "cursadas": [
+            11,
+            14
+          ],
+          "aprobadas": [
+            6
+          ]
+        }
+      },
+      {
+        "id": 25,
+        "name": "Química Aplicada",
+        "prerequisites": {
+          "cursadas": [
+            9,
+            11,
+            13,
+            14
+          ],
+          "aprobadas": [
+            1,
+            2,
+            6,
+            16
+          ]
+        }
+      },
+      {
+        "id": 26,
+        "name": "Inglés II 16 “2025 – Año de la Reconstrucción de la Nación Argentina” “2025 – Año de la Educación y el Conocimiento para una Sociedad Justa y Democratizadora”",
         "prerequisites": {
           "cursadas": [
             4
@@ -113,189 +295,175 @@
         }
       },
       {
-        "id": 13,
-        "name": "Sintaxis y Semántica de los Lenguajes",
-        "prerequisites": {
-          "cursadas": [
-            5,
-            6
-          ],
-          "aprobadas": []
-        }
-      },
-      {
-        "id": 14,
-        "name": "Paradigmas de Programación",
-        "prerequisites": {
-          "cursadas": [
-            5,
-            6
-          ],
-          "aprobadas": []
-        }
-      },
-      {
-        "id": 15,
-        "name": "Sistemas Operativos",
-        "prerequisites": {
-          "cursadas": [
-            7
-          ],
-          "aprobadas": []
-        }
-      },
-      {
-        "id": 16,
-        "name": "Análisis de Sistemas de Información (integradora)",
-        "prerequisites": {
-          "cursadas": [
-            6,
-            8
-          ],
-          "aprobadas": []
-        }
-      },
-      {
-        "id": 17,
-        "name": "Probabilidad y Estadística",
-        "prerequisites": {
-          "cursadas": [
-            1,
-            2
-          ],
-          "aprobadas": []
-        }
-      },
-      {
-        "id": 18,
-        "name": "Economía",
-        "prerequisites": {
-          "cursadas": [],
-          "aprobadas": [
-            1,
-            2
-          ]
-        }
-      },
-      {
-        "id": 19,
-        "name": "Bases de Datos",
-        "prerequisites": {
-          "cursadas": [
-            13,
-            16
-          ],
-          "aprobadas": [
-            5,
-            6
-          ]
-        }
-      },
-      {
-        "id": 20,
-        "name": "Desarrollo de Software",
-        "prerequisites": {
-          "cursadas": [
-            14,
-            16
-          ],
-          "aprobadas": [
-            5,
-            6
-          ]
-        }
-      },
-      {
-        "id": 21,
-        "name": "Comunicación de Datos",
-        "prerequisites": {
-          "cursadas": [],
-          "aprobadas": [
-            3,
-            7
-          ]
-        }
-      },
-      {
-        "id": 22,
-        "name": "Análisis Numérico",
-        "prerequisites": {
-          "cursadas": [
-            9
-          ],
-          "aprobadas": [
-            1,
-            2
-          ]
-        }
-      },
-      {
-        "id": 23,
-        "name": "Diseño de Sistemas de Información (integradora)",
-        "prerequisites": {
-          "cursadas": [
-            14,
-            16
-          ],
-          "aprobadas": [
-            4,
-            6,
-            8
-          ]
-        }
-      },
-      {
-        "id": 24,
-        "name": "Legislación",
-        "prerequisites": {
-          "cursadas": [
-            11
-          ],
-          "aprobadas": []
-        }
-      },
-      {
-        "id": 25,
-        "name": "Ingeniería y Calidad de Software",
-        "prerequisites": {
-          "cursadas": [
-            19,
-            20,
-            23
-          ],
-          "aprobadas": [
-            13,
-            14
-          ]
-        }
-      },
-      {
-        "id": 26,
-        "name": "Redes de Datos",
-        "prerequisites": {
-          "cursadas": [
-            15,
-            21
-          ],
-          "aprobadas": []
-        }
-      },
-      {
         "id": 27,
-        "name": "Investigación Operativa",
+        "name": "Diseño, simulación, optimización y seguridad de procesos",
         "prerequisites": {
           "cursadas": [
             17,
-            22
+            19
           ],
           "aprobadas": []
         }
       },
       {
         "id": 28,
-        "name": "Simulación",
+        "name": "Operaciones Unitarias I",
         "prerequisites": {
           "cursadas": [
+            17,
+            18,
+            22
+          ],
+          "aprobadas": [
+            9,
+            12,
+            13
+          ]
+        }
+      },
+      {
+        "id": 29,
+        "name": "Tecnología de la Energía Térmica",
+        "prerequisites": {
+          "cursadas": [
+            17,
+            18,
+            21,
+            22
+          ],
+          "aprobadas": [
+            9,
+            12,
+            13
+          ]
+        }
+      },
+      {
+        "id": 30,
+        "name": "Economía",
+        "prerequisites": {
+          "cursadas": [
+            9
+          ],
+          "aprobadas": [
+            2,
+            3
+          ]
+        }
+      },
+      {
+        "id": 31,
+        "name": "Operaciones Unitarias II 18",
+        "prerequisites": {
+          "cursadas": [],
+          "aprobadas": [
+            21,
+            22
+          ]
+        }
+      },
+      {
+        "id": 32,
+        "name": "Ingeniería de las Reacciones Químicas 17 -",
+        "prerequisites": {
+          "cursadas": [
+            18,
+            21,
+            22
+          ],
+          "aprobadas": [
+            11,
+            12,
+            14
+          ]
+        }
+      },
+      {
+        "id": 33,
+        "name": "Calidad y Control Estadístico de Procesos 10 4 -9 34 Organización Industrial",
+        "prerequisites": {
+          "cursadas": [
+            10,
+            17
+          ],
+          "aprobadas": [
+            2,
+            9,
+            15
+          ]
+        }
+      },
+      {
+        "id": 35,
+        "name": "Control Automático de Procesos",
+        "prerequisites": {
+          "cursadas": [
+            27,
+            31
+          ],
+          "aprobadas": [
+            17,
+            19,
+            23
+          ]
+        }
+      },
+      {
+        "id": 36,
+        "name": "Mecánica Industrial",
+        "prerequisites": {
+          "cursadas": [
+            9,
+            21
+          ],
+          "aprobadas": [
+            5,
+            11,
+            20
+          ]
+        }
+      },
+      {
+        "id": 37,
+        "name": "Ingeniería Ambiental",
+        "prerequisites": {
+          "cursadas": [
+            25,
+            28,
+            31,
+            32
+          ],
+          "aprobadas": [
+            15,
+            17,
+            23
+          ]
+        }
+      },
+      {
+        "id": 38,
+        "name": "Procesos Biotecnológicos",
+        "prerequisites": {
+          "cursadas": [
+            17,
+            21,
+            22,
+            24
+          ],
+          "aprobadas": [
+            9,
+            11,
+            14
+          ]
+        }
+      },
+      {
+        "id": 39,
+        "name": "Higiene y seguridad en el trabajo",
+        "prerequisites": {
+          "cursadas": [
+            11,
+            14,
             17
           ],
           "aprobadas": [
@@ -304,110 +472,31 @@
         }
       },
       {
-        "id": 29,
-        "name": "Tecnologías para la automatización",
-        "prerequisites": {
-          "cursadas": [
-            10,
-            22
-          ],
-          "aprobadas": [
-            9
-          ]
-        }
-      },
-      {
-        "id": 30,
-        "name": "Administración de Sistemas de Información (integradora)",
-        "prerequisites": {
-          "cursadas": [
-            18,
-            23
-          ],
-          "aprobadas": [
-            16
-          ]
-        }
-      },
-      {
-        "id": 31,
-        "name": "Inteligencia Artificial",
+        "id": 40,
+        "name": "Máquinas e Instalaciones Eléctricas",
         "prerequisites": {
           "cursadas": [
             28
           ],
           "aprobadas": [
-            17,
-            22
+            9,
+            13
           ]
         }
       },
       {
-        "id": 32,
-        "name": "Ciencia de Datos",
+        "id": 41,
+        "name": "Proyecto Final",
         "prerequisites": {
           "cursadas": [
-            28
+            27,
+            28,
+            29,
+            31
           ],
           "aprobadas": [
-            17,
-            19
-          ]
-        }
-      },
-      {
-        "id": 33,
-        "name": "Sistemas de Gestión",
-        "prerequisites": {
-          "cursadas": [
-            18,
-            27
-          ],
-          "aprobadas": [
-            23
-          ]
-        }
-      },
-      {
-        "id": 34,
-        "name": "Gestión Gerencial",
-        "prerequisites": {
-          "cursadas": [
-            24,
-            30
-          ],
-          "aprobadas": [
-            18
-          ]
-        }
-      },
-      {
-        "id": 35,
-        "name": "Seguridad en los Sistemas de Información",
-        "prerequisites": {
-          "cursadas": [
-            26,
-            30
-          ],
-          "aprobadas": [
-            20,
-            21
-          ]
-        }
-      },
-      {
-        "id": 36,
-        "name": "Proyecto Final (integradora)",
-        "prerequisites": {
-          "cursadas": [
-            25,
-            26,
-            30
-          ],
-          "aprobadas": [
-            12,
-            20,
-            23
+            32,
+            34
           ]
         }
       }
@@ -419,13 +508,8 @@
         "type": "cursada"
       },
       {
-        "source": 2,
+        "source": 6,
         "target": 9,
-        "type": "cursada"
-      },
-      {
-        "source": 1,
-        "target": 10,
         "type": "cursada"
       },
       {
@@ -435,7 +519,22 @@
       },
       {
         "source": 4,
-        "target": 12,
+        "target": 10,
+        "type": "cursada"
+      },
+      {
+        "source": 3,
+        "target": 11,
+        "type": "cursada"
+      },
+      {
+        "source": 4,
+        "target": 11,
+        "type": "cursada"
+      },
+      {
+        "source": 4,
+        "target": 13,
         "type": "cursada"
       },
       {
@@ -445,73 +544,108 @@
       },
       {
         "source": 6,
-        "target": 13,
-        "type": "cursada"
-      },
-      {
-        "source": 5,
         "target": 14,
         "type": "cursada"
       },
       {
-        "source": 6,
-        "target": 14,
+        "source": 1,
+        "target": 15,
         "type": "cursada"
       },
       {
-        "source": 7,
+        "source": 2,
         "target": 15,
         "type": "cursada"
       },
       {
         "source": 6,
-        "target": 16,
+        "target": 17,
+        "type": "cursada"
+      },
+      {
+        "source": 7,
+        "target": 17,
         "type": "cursada"
       },
       {
         "source": 8,
-        "target": 16,
-        "type": "cursada"
-      },
-      {
-        "source": 1,
         "target": 17,
         "type": "cursada"
       },
       {
-        "source": 2,
+        "source": 9,
         "target": 17,
         "type": "cursada"
-      },
-      {
-        "source": 1,
-        "target": 18,
-        "type": "aprobada"
-      },
-      {
-        "source": 2,
-        "target": 18,
-        "type": "aprobada"
       },
       {
         "source": 13,
-        "target": 19,
+        "target": 17,
         "type": "cursada"
       },
       {
-        "source": 16,
-        "target": 19,
+        "source": 1,
+        "target": 17,
+        "type": "aprobada"
+      },
+      {
+        "source": 3,
+        "target": 17,
+        "type": "aprobada"
+      },
+      {
+        "source": 4,
+        "target": 17,
+        "type": "aprobada"
+      },
+      {
+        "source": 11,
+        "target": 18,
         "type": "cursada"
       },
       {
-        "source": 5,
-        "target": 19,
+        "source": 12,
+        "target": 18,
+        "type": "cursada"
+      },
+      {
+        "source": 13,
+        "target": 18,
+        "type": "cursada"
+      },
+      {
+        "source": 4,
+        "target": 18,
         "type": "aprobada"
       },
       {
         "source": 6,
+        "target": 18,
+        "type": "aprobada"
+      },
+      {
+        "source": 12,
+        "target": 19,
+        "type": "cursada"
+      },
+      {
+        "source": 3,
         "target": 19,
         "type": "aprobada"
+      },
+      {
+        "source": 4,
+        "target": 19,
+        "type": "aprobada"
+      },
+      {
+        "source": 9,
+        "target": 20,
+        "type": "cursada"
+      },
+      {
+        "source": 11,
+        "target": 20,
+        "type": "cursada"
       },
       {
         "source": 14,
@@ -519,12 +653,7 @@
         "type": "cursada"
       },
       {
-        "source": 16,
-        "target": 20,
-        "type": "cursada"
-      },
-      {
-        "source": 5,
+        "source": 1,
         "target": 20,
         "type": "aprobada"
       },
@@ -534,12 +663,32 @@
         "type": "aprobada"
       },
       {
+        "source": 9,
+        "target": 21,
+        "type": "cursada"
+      },
+      {
+        "source": 12,
+        "target": 21,
+        "type": "cursada"
+      },
+      {
+        "source": 13,
+        "target": 21,
+        "type": "cursada"
+      },
+      {
         "source": 3,
         "target": 21,
         "type": "aprobada"
       },
       {
-        "source": 7,
+        "source": 4,
+        "target": 21,
+        "type": "aprobada"
+      },
+      {
+        "source": 6,
         "target": 21,
         "type": "aprobada"
       },
@@ -549,14 +698,39 @@
         "type": "cursada"
       },
       {
-        "source": 1,
+        "source": 12,
+        "target": 22,
+        "type": "cursada"
+      },
+      {
+        "source": 13,
+        "target": 22,
+        "type": "cursada"
+      },
+      {
+        "source": 3,
         "target": 22,
         "type": "aprobada"
       },
       {
-        "source": 2,
+        "source": 4,
         "target": 22,
         "type": "aprobada"
+      },
+      {
+        "source": 6,
+        "target": 22,
+        "type": "aprobada"
+      },
+      {
+        "source": 10,
+        "target": 23,
+        "type": "cursada"
+      },
+      {
+        "source": 11,
+        "target": 23,
+        "type": "cursada"
       },
       {
         "source": 14,
@@ -564,22 +738,12 @@
         "type": "cursada"
       },
       {
-        "source": 16,
-        "target": 23,
-        "type": "cursada"
-      },
-      {
-        "source": 4,
+        "source": 2,
         "target": 23,
         "type": "aprobada"
       },
       {
         "source": 6,
-        "target": 23,
-        "type": "aprobada"
-      },
-      {
-        "source": 8,
         "target": 23,
         "type": "aprobada"
       },
@@ -589,203 +753,407 @@
         "type": "cursada"
       },
       {
-        "source": 19,
+        "source": 14,
+        "target": 24,
+        "type": "cursada"
+      },
+      {
+        "source": 6,
+        "target": 24,
+        "type": "aprobada"
+      },
+      {
+        "source": 9,
         "target": 25,
         "type": "cursada"
       },
       {
-        "source": 20,
-        "target": 25,
-        "type": "cursada"
-      },
-      {
-        "source": 23,
+        "source": 11,
         "target": 25,
         "type": "cursada"
       },
       {
         "source": 13,
         "target": 25,
-        "type": "aprobada"
+        "type": "cursada"
       },
       {
         "source": 14,
         "target": 25,
-        "type": "aprobada"
-      },
-      {
-        "source": 15,
-        "target": 26,
         "type": "cursada"
       },
       {
-        "source": 21,
+        "source": 1,
+        "target": 25,
+        "type": "aprobada"
+      },
+      {
+        "source": 2,
+        "target": 25,
+        "type": "aprobada"
+      },
+      {
+        "source": 6,
+        "target": 25,
+        "type": "aprobada"
+      },
+      {
+        "source": 16,
+        "target": 25,
+        "type": "aprobada"
+      },
+      {
+        "source": 4,
         "target": 26,
         "type": "cursada"
       },
       {
         "source": 17,
         "target": 27,
+        "type": "cursada"
+      },
+      {
+        "source": 19,
+        "target": 27,
+        "type": "cursada"
+      },
+      {
+        "source": 17,
+        "target": 28,
+        "type": "cursada"
+      },
+      {
+        "source": 18,
+        "target": 28,
         "type": "cursada"
       },
       {
         "source": 22,
-        "target": 27,
-        "type": "cursada"
-      },
-      {
-        "source": 17,
         "target": 28,
         "type": "cursada"
       },
       {
         "source": 9,
         "target": 28,
+        "type": "aprobada"
+      },
+      {
+        "source": 12,
+        "target": 28,
+        "type": "aprobada"
+      },
+      {
+        "source": 13,
+        "target": 28,
+        "type": "aprobada"
+      },
+      {
+        "source": 17,
+        "target": 29,
+        "type": "cursada"
+      },
+      {
+        "source": 18,
+        "target": 29,
+        "type": "cursada"
+      },
+      {
+        "source": 21,
+        "target": 29,
+        "type": "cursada"
+      },
+      {
+        "source": 22,
+        "target": 29,
+        "type": "cursada"
+      },
+      {
+        "source": 9,
+        "target": 29,
+        "type": "aprobada"
+      },
+      {
+        "source": 12,
+        "target": 29,
+        "type": "aprobada"
+      },
+      {
+        "source": 13,
+        "target": 29,
+        "type": "aprobada"
+      },
+      {
+        "source": 9,
+        "target": 30,
+        "type": "cursada"
+      },
+      {
+        "source": 2,
+        "target": 30,
+        "type": "aprobada"
+      },
+      {
+        "source": 3,
+        "target": 30,
+        "type": "aprobada"
+      },
+      {
+        "source": 21,
+        "target": 31,
+        "type": "aprobada"
+      },
+      {
+        "source": 22,
+        "target": 31,
+        "type": "aprobada"
+      },
+      {
+        "source": 18,
+        "target": 32,
+        "type": "cursada"
+      },
+      {
+        "source": 21,
+        "target": 32,
+        "type": "cursada"
+      },
+      {
+        "source": 22,
+        "target": 32,
+        "type": "cursada"
+      },
+      {
+        "source": 11,
+        "target": 32,
+        "type": "aprobada"
+      },
+      {
+        "source": 12,
+        "target": 32,
+        "type": "aprobada"
+      },
+      {
+        "source": 14,
+        "target": 32,
         "type": "aprobada"
       },
       {
         "source": 10,
-        "target": 29,
+        "target": 33,
         "type": "cursada"
       },
       {
-        "source": 22,
-        "target": 29,
+        "source": 17,
+        "target": 33,
         "type": "cursada"
+      },
+      {
+        "source": 2,
+        "target": 33,
+        "type": "aprobada"
       },
       {
         "source": 9,
-        "target": 29,
+        "target": 33,
         "type": "aprobada"
       },
       {
-        "source": 18,
-        "target": 30,
-        "type": "cursada"
-      },
-      {
-        "source": 23,
-        "target": 30,
-        "type": "cursada"
-      },
-      {
-        "source": 16,
-        "target": 30,
+        "source": 15,
+        "target": 33,
         "type": "aprobada"
       },
       {
-        "source": 28,
-        "target": 31,
+        "source": 27,
+        "target": 35,
+        "type": "cursada"
+      },
+      {
+        "source": 31,
+        "target": 35,
         "type": "cursada"
       },
       {
         "source": 17,
-        "target": 31,
-        "type": "aprobada"
-      },
-      {
-        "source": 22,
-        "target": 31,
-        "type": "aprobada"
-      },
-      {
-        "source": 28,
-        "target": 32,
-        "type": "cursada"
-      },
-      {
-        "source": 17,
-        "target": 32,
+        "target": 35,
         "type": "aprobada"
       },
       {
         "source": 19,
-        "target": 32,
+        "target": 35,
         "type": "aprobada"
-      },
-      {
-        "source": 18,
-        "target": 33,
-        "type": "cursada"
-      },
-      {
-        "source": 27,
-        "target": 33,
-        "type": "cursada"
       },
       {
         "source": 23,
-        "target": 33,
-        "type": "aprobada"
-      },
-      {
-        "source": 24,
-        "target": 34,
-        "type": "cursada"
-      },
-      {
-        "source": 30,
-        "target": 34,
-        "type": "cursada"
-      },
-      {
-        "source": 18,
-        "target": 34,
-        "type": "aprobada"
-      },
-      {
-        "source": 26,
-        "target": 35,
-        "type": "cursada"
-      },
-      {
-        "source": 30,
-        "target": 35,
-        "type": "cursada"
-      },
-      {
-        "source": 20,
         "target": 35,
         "type": "aprobada"
+      },
+      {
+        "source": 9,
+        "target": 36,
+        "type": "cursada"
       },
       {
         "source": 21,
-        "target": 35,
+        "target": 36,
+        "type": "cursada"
+      },
+      {
+        "source": 5,
+        "target": 36,
+        "type": "aprobada"
+      },
+      {
+        "source": 11,
+        "target": 36,
+        "type": "aprobada"
+      },
+      {
+        "source": 20,
+        "target": 36,
         "type": "aprobada"
       },
       {
         "source": 25,
-        "target": 36,
+        "target": 37,
         "type": "cursada"
       },
       {
-        "source": 26,
-        "target": 36,
+        "source": 28,
+        "target": 37,
         "type": "cursada"
       },
       {
-        "source": 30,
-        "target": 36,
+        "source": 31,
+        "target": 37,
         "type": "cursada"
       },
       {
-        "source": 12,
-        "target": 36,
+        "source": 32,
+        "target": 37,
+        "type": "cursada"
+      },
+      {
+        "source": 15,
+        "target": 37,
         "type": "aprobada"
       },
       {
-        "source": 20,
-        "target": 36,
+        "source": 17,
+        "target": 37,
         "type": "aprobada"
       },
       {
         "source": 23,
-        "target": 36,
+        "target": 37,
+        "type": "aprobada"
+      },
+      {
+        "source": 17,
+        "target": 38,
+        "type": "cursada"
+      },
+      {
+        "source": 21,
+        "target": 38,
+        "type": "cursada"
+      },
+      {
+        "source": 22,
+        "target": 38,
+        "type": "cursada"
+      },
+      {
+        "source": 24,
+        "target": 38,
+        "type": "cursada"
+      },
+      {
+        "source": 9,
+        "target": 38,
+        "type": "aprobada"
+      },
+      {
+        "source": 11,
+        "target": 38,
+        "type": "aprobada"
+      },
+      {
+        "source": 14,
+        "target": 38,
+        "type": "aprobada"
+      },
+      {
+        "source": 11,
+        "target": 39,
+        "type": "cursada"
+      },
+      {
+        "source": 14,
+        "target": 39,
+        "type": "cursada"
+      },
+      {
+        "source": 17,
+        "target": 39,
+        "type": "cursada"
+      },
+      {
+        "source": 9,
+        "target": 39,
+        "type": "aprobada"
+      },
+      {
+        "source": 28,
+        "target": 40,
+        "type": "cursada"
+      },
+      {
+        "source": 9,
+        "target": 40,
+        "type": "aprobada"
+      },
+      {
+        "source": 13,
+        "target": 40,
+        "type": "aprobada"
+      },
+      {
+        "source": 27,
+        "target": 41,
+        "type": "cursada"
+      },
+      {
+        "source": 28,
+        "target": 41,
+        "type": "cursada"
+      },
+      {
+        "source": 29,
+        "target": 41,
+        "type": "cursada"
+      },
+      {
+        "source": 31,
+        "target": 41,
+        "type": "cursada"
+      },
+      {
+        "source": 32,
+        "target": 41,
+        "type": "aprobada"
+      },
+      {
+        "source": 34,
+        "target": 41,
         "type": "aprobada"
       }
     ]
   },
   "progress": {
-    "approvedIds": []
+    "approvedIds": [
+      3,
+      4,
+      5
+    ]
   }
 }

@@ -16,6 +16,7 @@ const stateFilterEl = document.getElementById("state-filter");
 const toggleViewEl = document.getElementById("toggle-view");
 const tableViewEl = document.getElementById("table-view");
 const graphViewEl = document.getElementById("graph");
+const layoutSectionEl = document.getElementById("layout-section");
 const tableBodyEl = document.getElementById("table-body");
 const themeToggleEl = document.getElementById("theme-toggle");
 const exportToggleEl = document.getElementById("export-toggle");
@@ -26,6 +27,7 @@ const exportPngEl = document.getElementById("export-png");
 const statsBarEl = document.getElementById("stats-bar");
 const tooltipEl = document.getElementById("graph-tooltip");
 const templateListEl = document.getElementById("template-list");
+const detailPanelEl = document.getElementById("detail-panel");
 
 let zoomFeedbackTimer = null;
 let currentView = "graph";
@@ -38,6 +40,18 @@ const uiFilters = {
   query: "",
   state: "unlocked",
 };
+
+function isMobileViewport() {
+  return window.matchMedia("(max-width: 700px)").matches;
+}
+
+function revealDetailPanelOnMobile() {
+  if (!isMobileViewport() || !detailPanelEl) {
+    return;
+  }
+
+  detailPanelEl.scrollIntoView({ behavior: "smooth", block: "start" });
+}
 
 function setStatus(text, isError = false) {
   statusEl.textContent = text;
@@ -468,6 +482,7 @@ function renderTable(data) {
     row.addEventListener("click", () => {
       selectedId = subject.id;
       renderDetail();
+      revealDetailPanelOnMobile();
     });
 
     const actionButton = row.querySelector("button");
@@ -782,6 +797,7 @@ function renderGraph(data) {
     graph.on("tap", "node", (event) => {
       selectedId = Number.parseInt(event.target.id(), 10);
       renderDetail();
+      revealDetailPanelOnMobile();
     });
 
     graph.on("dblclick dbltap", "node", (event) => {
@@ -821,10 +837,12 @@ function setAppLoaded(isLoaded) {
     onboardingSection.classList.add("is-hidden");
     uploadForm.classList.add("is-hidden");
     resetTemplateBtn.classList.remove("is-hidden");
+    layoutSectionEl?.classList.remove("is-hidden");
   } else {
     onboardingSection.classList.remove("is-hidden");
     uploadForm.classList.remove("is-hidden");
     resetTemplateBtn.classList.add("is-hidden");
+    layoutSectionEl?.classList.add("is-hidden");
   }
 }
 
@@ -992,7 +1010,7 @@ document.addEventListener("keydown", (event) => {
 });
 
 initTheme();
-applyViewMode("graph");
+applyViewMode(isMobileViewport() ? "table" : "graph");
 loadTemplates();
 loadGraph().catch(() => {
   setStatus("Todavía no hay un plan cargado. Subí tu PDF para empezar.");
