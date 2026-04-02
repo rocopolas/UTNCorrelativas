@@ -4,7 +4,8 @@
   "description": "Mapa interactivo de correlativas a partir de PDF",
   "main": "src/server.js",
   "scripts": {
-    "start": "node src/server.js"
+    "start": "node src/server.js",
+    "build": "rm -rf dist && mkdir -p dist && cp -r public/. dist/"
   },
   "dependencies": {
     "express": "^4.21.2",

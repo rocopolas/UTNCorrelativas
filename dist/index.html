@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mapa de Correlativas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/styles.css" />
+    <script src="https://unpkg.com/cytoscape@3.29.2/dist/cytoscape.min.js"></script>
+    <script src="https://unpkg.com/dagre@0.8.5/dist/dagre.min.js"></script>
+    <script src="https://unpkg.com/cytoscape-dagre@2.5.0/cytoscape-dagre.js"></script>
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <h1>Visualizador de Correlativas</h1>
+        <p>Subí el PDF del plan y explorá qué materias se desbloquean cuando aprobás una.</p>
+      </header>
+
+      <section id="onboarding-section" class="onboarding card">
+        <div class="onboarding-copy">
+          <h2>Plantillas precargadas</h2>
+          <p class="onboarding-warning">
+            Estas plantillas corresponden a 2026. Si cursás en otro año, se recomienda importar PDFs nuevos y actualizados.
+          </p>
+        </div>
+        <div id="template-list" class="template-list" aria-live="polite">
+          Cargando plantillas...
+        </div>
+      </section>
+
+      <section class="controls card">
+        <form id="upload-form" class="upload-form">
+          <label class="file-label" for="pdf-input">PDF del plan de estudio</label>
+          <input id="pdf-input" name="pdf" type="file" accept="application/pdf" required />
+          <button type="submit">Importar PDF</button>
+        </form>
+        <div class="quick-toolbar">
+          <input
+            id="search-input"
+            type="search"
+            placeholder="Buscar por nombre o ID"
+            aria-label="Buscar materia"
+          />
+          <select id="state-filter" aria-label="Filtrar por estado">
+            <option value="unlocked" selected>Desbloqueadas (incluye aprobadas)</option>
+            <option value="all">Todos los estados</option>
+            <option value="approved">Aprobadas</option>
+            <option value="locked">Bloqueadas</option>
+          </select>
+          <button id="toggle-view" type="button">Ver tabla</button>
+          <div class="export-dropdown">
+            <button id="export-toggle" type="button" aria-haspopup="true" aria-expanded="false">
+              Exportar ▾
+            </button>
+            <div id="export-menu" class="export-menu is-hidden" role="menu" aria-label="Exportar progreso">
+              <button id="export-json" type="button" role="menuitem">Exportar JSON</button>
+              <button id="export-csv" type="button" role="menuitem">Exportar CSV</button>
+              <button id="export-png" type="button" role="menuitem">Exportar PNG</button>
+            </div>
+          </div>
+          <button id="theme-toggle" type="button">Modo oscuro</button>
+        </div>
+        <div class="stats-bar" id="stats-bar" aria-live="polite">
+          Sin datos cargados.
+        </div>
+        <div id="status"></div>
+      </section>
+
+      <section id="layout-section" class="layout">
+        <div class="views">
+          <div id="graph" class="card view-panel">
+            <div id="zoom-feedback" class="zoom-feedback" aria-live="polite">Zoom: 100%</div>
+            <div id="graph-tooltip" class="graph-tooltip" role="status" aria-live="polite"></div>
+          </div>
+          <div id="table-view" class="card view-panel is-hidden">
+            <div class="table-wrap">
+              <table>
+                <thead>
+                  <tr>
+                    <th>ID</th>
+                    <th>Materia</th>
+                    <th>Estado</th>
+                    <th>Correlativas</th>
+                    <th>Accion</th>
+                  </tr>
+                </thead>
+                <tbody id="table-body"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+        <aside id="detail-panel" class="panel card">
+          <h2>Detalle de materia</h2>
+          <div id="subject-detail">Seleccioná un nodo para ver su información.</div>
+        </aside>
+      </section>
+      <footer style="margin-top: 1rem; text-align: center;">
+        <button id="reset-template-btn" type="button" class="is-hidden" style="background: rgba(180, 50, 50, 0.8);">Reiniciar plantilla</button>
+      </footer>
+    </main>
+
+    <script src="/app.js"></script>
+  </body>
+</html>

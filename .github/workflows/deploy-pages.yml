@@ -24,13 +24,13 @@ jobs:
     steps:
       # 1) Descarga el codigo del repositorio para el job.
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v5
 
       # 2) Configura Node.js para instalar dependencias y construir.
       - name: Setup Node.js
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@v5
         with:
-          node-version: 20
+          node-version: 22
           cache: npm
 
       # 3) Instala dependencias: usa npm ci si hay lockfile, si no npm install.
