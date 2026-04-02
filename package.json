@@ -5,7 +5,7 @@
   "main": "src/server.js",
   "scripts": {
     "start": "node src/server.js",
-    "build": "rm -rf dist && mkdir -p dist && cp -r public/. dist/"
+    "build": "node scripts/build.mjs"
   },
   "dependencies": {
     "express": "^4.21.2",

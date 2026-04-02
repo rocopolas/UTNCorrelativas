@@ -28,6 +28,7 @@ const statsBarEl = document.getElementById("stats-bar");
 const tooltipEl = document.getElementById("graph-tooltip");
 const templateListEl = document.getElementById("template-list");
 const detailPanelEl = document.getElementById("detail-panel");
+const core = window.correlativasCore;
 
 let zoomFeedbackTimer = null;
 let currentView = "graph";
@@ -192,16 +193,7 @@ function renderTemplateList() {
 
       try {
         setStatus(`Importando plantilla ${template.label}...`);
-        const response = await fetch("/api/import-template", {
-          method: "POST",
-          headers: { "Content-Type": "application/json" },
-          body: JSON.stringify({ fileName: template.fileName }),
-        });
-
-        const payload = await response.json();
-        if (!response.ok) {
-          throw new Error(payload.detail || payload.error || "Fallo al importar plantilla");
-        }
+        const payload = await core.importTemplateByFileName(template.fileName);
 
         setStatus(`Plantilla importada: ${payload.template.fileName}. ${message}`);
         await loadGraph();
@@ -218,12 +210,7 @@ async function loadTemplates() {
   }
 
   try {
-    const response = await fetch("/api/templates");
-    if (!response.ok) {
-      throw new Error("No se pudieron cargar las plantillas");
-    }
-
-    const payload = await response.json();
+    const payload = await core.loadTemplatesManifest();
     templates = Array.isArray(payload.templates) ? payload.templates : [];
     templatesYear = payload.year || 2026;
 
@@ -232,7 +219,7 @@ async function loadTemplates() {
     }
 
     if (!templates.length) {
-      templateListEl.textContent = "No hay plantillas precargadas en la carpeta pdf/";
+      templateListEl.textContent = payload.reason || "No hay plantillas precargadas en la carpeta pdf/";
       return;
     }
 
@@ -847,13 +834,12 @@ function setAppLoaded(isLoaded) {
 }
 
 async function loadGraph() {
-  const response = await fetch("/api/graph");
-  if (!response.ok) {
+  try {
+    graphData = await core.getGraphData();
+  } catch (_error) {
     setAppLoaded(false);
     throw new Error("No hay plan importado todavía.");
   }
-
-  graphData = await response.json();
   const visibleSubjectIds = getDisplayedSubjectIds(graphData);
   if (selectedId && !visibleSubjectIds.has(selectedId)) {
     selectedId = null;
@@ -875,16 +861,7 @@ async function loadGraph() {
 }
 
 async function toggleSubject(subjectId) {
-  const response = await fetch("/api/progress/toggle", {
-    method: "POST",
-    headers: { "Content-Type": "application/json" },
-    body: JSON.stringify({ subjectId }),
-  });
-
-  const payload = await response.json();
-  if (!response.ok) {
-    throw new Error(payload.error || "No se pudo actualizar el progreso.");
-  }
+  const payload = await core.toggleSubject(subjectId);
 
   graphData.progress = payload.progress;
   graphData.states = payload.states;
@@ -935,22 +912,11 @@ uploadForm.addEventListener("submit", async (event) => {
     return;
   }
 
-  const formData = new FormData();
-  formData.append("pdf", fileInput.files[0]);
-
   try {
     setStatus("Importando PDF...");
-    const response = await fetch("/api/import", {
-      method: "POST",
-      body: formData,
-    });
+    const plan = await core.importPlanFromPdfFile(fileInput.files[0]);
 
-    const payload = await response.json();
-    if (!response.ok) {
-      throw new Error(payload.detail || payload.error || "Fallo de importación");
-    }
-
-    setStatus(`Importación exitosa: ${payload.stats.subjectCount} materias detectadas.`);
+    setStatus(`Importación exitosa: ${plan.stats.subjectCount} materias detectadas.`);
     await loadGraph();
   } catch (error) {
     setStatus(error.message || "Error desconocido al importar.", true);
@@ -982,7 +948,7 @@ exportPngEl.addEventListener("click", exportGraphAsPng);
 resetTemplateBtn.addEventListener("click", async () => {
   if (confirm("¿Estás seguro que querés reiniciar la plantilla? Se perderá el avance cargado actual.")) {
     try {
-      await fetch("/api/reset", { method: "DELETE" });
+      core.resetStore();
       window.location.reload();
     } catch (err) {
       setStatus("Error al reiniciar la plantilla", true);
