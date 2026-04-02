@@ -1,0 +1,791 @@
+{
+  "plan": {
+    "sourceFile": "/home/rocopolas/Documentos/Visualizador_de_correlativas/pdf/Sistemas - Régimen de Correlatividades y Equivalencias.pdf",
+    "source": "pdftotext",
+    "importedAt": "2026-04-02T03:32:23.204Z",
+    "stats": {
+      "subjectCount": 36,
+      "edgeCount": 74
+    },
+    "subjects": [
+      {
+        "id": 1,
+        "name": "Análisis Matemático I",
+        "prerequisites": {
+          "cursadas": [],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 2,
+        "name": "Álgebra y Geometría Analítica",
+        "prerequisites": {
+          "cursadas": [],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 3,
+        "name": "Física I",
+        "prerequisites": {
+          "cursadas": [],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 4,
+        "name": "Inglés I",
+        "prerequisites": {
+          "cursadas": [],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 5,
+        "name": "Lógica y Estructuras Discretas",
+        "prerequisites": {
+          "cursadas": [],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 6,
+        "name": "Algoritmos y Estructuras de Datos",
+        "prerequisites": {
+          "cursadas": [],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 7,
+        "name": "Arquitectura de Computadoras",
+        "prerequisites": {
+          "cursadas": [],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 8,
+        "name": "Sistemas y Procesos de Negocio",
+        "prerequisites": {
+          "cursadas": [],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 9,
+        "name": "Análisis Matemático II",
+        "prerequisites": {
+          "cursadas": [
+            1,
+            2
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 10,
+        "name": "Física II",
+        "prerequisites": {
+          "cursadas": [
+            1,
+            3
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 11,
+        "name": "Ingeniería y Sociedad",
+        "prerequisites": {
+          "cursadas": [],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 12,
+        "name": "Inglés II",
+        "prerequisites": {
+          "cursadas": [
+            4
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 13,
+        "name": "Sintaxis y Semántica de los Lenguajes",
+        "prerequisites": {
+          "cursadas": [
+            5,
+            6
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 14,
+        "name": "Paradigmas de Programación",
+        "prerequisites": {
+          "cursadas": [
+            5,
+            6
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 15,
+        "name": "Sistemas Operativos",
+        "prerequisites": {
+          "cursadas": [
+            7
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 16,
+        "name": "Análisis de Sistemas de Información (integradora)",
+        "prerequisites": {
+          "cursadas": [
+            6,
+            8
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 17,
+        "name": "Probabilidad y Estadística",
+        "prerequisites": {
+          "cursadas": [
+            1,
+            2
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 18,
+        "name": "Economía",
+        "prerequisites": {
+          "cursadas": [],
+          "aprobadas": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "id": 19,
+        "name": "Bases de Datos",
+        "prerequisites": {
+          "cursadas": [
+            13,
+            16
+          ],
+          "aprobadas": [
+            5,
+            6
+          ]
+        }
+      },
+      {
+        "id": 20,
+        "name": "Desarrollo de Software",
+        "prerequisites": {
+          "cursadas": [
+            14,
+            16
+          ],
+          "aprobadas": [
+            5,
+            6
+          ]
+        }
+      },
+      {
+        "id": 21,
+        "name": "Comunicación de Datos",
+        "prerequisites": {
+          "cursadas": [],
+          "aprobadas": [
+            3,
+            7
+          ]
+        }
+      },
+      {
+        "id": 22,
+        "name": "Análisis Numérico",
+        "prerequisites": {
+          "cursadas": [
+            9
+          ],
+          "aprobadas": [
+            1,
+            2
+          ]
+        }
+      },
+      {
+        "id": 23,
+        "name": "Diseño de Sistemas de Información (integradora)",
+        "prerequisites": {
+          "cursadas": [
+            14,
+            16
+          ],
+          "aprobadas": [
+            4,
+            6,
+            8
+          ]
+        }
+      },
+      {
+        "id": 24,
+        "name": "Legislación",
+        "prerequisites": {
+          "cursadas": [
+            11
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 25,
+        "name": "Ingeniería y Calidad de Software",
+        "prerequisites": {
+          "cursadas": [
+            19,
+            20,
+            23
+          ],
+          "aprobadas": [
+            13,
+            14
+          ]
+        }
+      },
+      {
+        "id": 26,
+        "name": "Redes de Datos",
+        "prerequisites": {
+          "cursadas": [
+            15,
+            21
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 27,
+        "name": "Investigación Operativa",
+        "prerequisites": {
+          "cursadas": [
+            17,
+            22
+          ],
+          "aprobadas": []
+        }
+      },
+      {
+        "id": 28,
+        "name": "Simulación",
+        "prerequisites": {
+          "cursadas": [
+            17
+          ],
+          "aprobadas": [
+            9
+          ]
+        }
+      },
+      {
+        "id": 29,
+        "name": "Tecnologías para la automatización",
+        "prerequisites": {
+          "cursadas": [
+            10,
+            22
+          ],
+          "aprobadas": [
+            9
+          ]
+        }
+      },
+      {
+        "id": 30,
+        "name": "Administración de Sistemas de Información (integradora)",
+        "prerequisites": {
+          "cursadas": [
+            18,
+            23
+          ],
+          "aprobadas": [
+            16
+          ]
+        }
+      },
+      {
+        "id": 31,
+        "name": "Inteligencia Artificial",
+        "prerequisites": {
+          "cursadas": [
+            28
+          ],
+          "aprobadas": [
+            17,
+            22
+          ]
+        }
+      },
+      {
+        "id": 32,
+        "name": "Ciencia de Datos",
+        "prerequisites": {
+          "cursadas": [
+            28
+          ],
+          "aprobadas": [
+            17,
+            19
+          ]
+        }
+      },
+      {
+        "id": 33,
+        "name": "Sistemas de Gestión",
+        "prerequisites": {
+          "cursadas": [
+            18,
+            27
+          ],
+          "aprobadas": [
+            23
+          ]
+        }
+      },
+      {
+        "id": 34,
+        "name": "Gestión Gerencial",
+        "prerequisites": {
+          "cursadas": [
+            24,
+            30
+          ],
+          "aprobadas": [
+            18
+          ]
+        }
+      },
+      {
+        "id": 35,
+        "name": "Seguridad en los Sistemas de Información",
+        "prerequisites": {
+          "cursadas": [
+            26,
+            30
+          ],
+          "aprobadas": [
+            20,
+            21
+          ]
+        }
+      },
+      {
+        "id": 36,
+        "name": "Proyecto Final (integradora)",
+        "prerequisites": {
+          "cursadas": [
+            25,
+            26,
+            30
+          ],
+          "aprobadas": [
+            12,
+            20,
+            23
+          ]
+        }
+      }
+    ],
+    "edges": [
+      {
+        "source": 1,
+        "target": 9,
+        "type": "cursada"
+      },
+      {
+        "source": 2,
+        "target": 9,
+        "type": "cursada"
+      },
+      {
+        "source": 1,
+        "target": 10,
+        "type": "cursada"
+      },
+      {
+        "source": 3,
+        "target": 10,
+        "type": "cursada"
+      },
+      {
+        "source": 4,
+        "target": 12,
+        "type": "cursada"
+      },
+      {
+        "source": 5,
+        "target": 13,
+        "type": "cursada"
+      },
+      {
+        "source": 6,
+        "target": 13,
+        "type": "cursada"
+      },
+      {
+        "source": 5,
+        "target": 14,
+        "type": "cursada"
+      },
+      {
+        "source": 6,
+        "target": 14,
+        "type": "cursada"
+      },
+      {
+        "source": 7,
+        "target": 15,
+        "type": "cursada"
+      },
+      {
+        "source": 6,
+        "target": 16,
+        "type": "cursada"
+      },
+      {
+        "source": 8,
+        "target": 16,
+        "type": "cursada"
+      },
+      {
+        "source": 1,
+        "target": 17,
+        "type": "cursada"
+      },
+      {
+        "source": 2,
+        "target": 17,
+        "type": "cursada"
+      },
+      {
+        "source": 1,
+        "target": 18,
+        "type": "aprobada"
+      },
+      {
+        "source": 2,
+        "target": 18,
+        "type": "aprobada"
+      },
+      {
+        "source": 13,
+        "target": 19,
+        "type": "cursada"
+      },
+      {
+        "source": 16,
+        "target": 19,
+        "type": "cursada"
+      },
+      {
+        "source": 5,
+        "target": 19,
+        "type": "aprobada"
+      },
+      {
+        "source": 6,
+        "target": 19,
+        "type": "aprobada"
+      },
+      {
+        "source": 14,
+        "target": 20,
+        "type": "cursada"
+      },
+      {
+        "source": 16,
+        "target": 20,
+        "type": "cursada"
+      },
+      {
+        "source": 5,
+        "target": 20,
+        "type": "aprobada"
+      },
+      {
+        "source": 6,
+        "target": 20,
+        "type": "aprobada"
+      },
+      {
+        "source": 3,
+        "target": 21,
+        "type": "aprobada"
+      },
+      {
+        "source": 7,
+        "target": 21,
+        "type": "aprobada"
+      },
+      {
+        "source": 9,
+        "target": 22,
+        "type": "cursada"
+      },
+      {
+        "source": 1,
+        "target": 22,
+        "type": "aprobada"
+      },
+      {
+        "source": 2,
+        "target": 22,
+        "type": "aprobada"
+      },
+      {
+        "source": 14,
+        "target": 23,
+        "type": "cursada"
+      },
+      {
+        "source": 16,
+        "target": 23,
+        "type": "cursada"
+      },
+      {
+        "source": 4,
+        "target": 23,
+        "type": "aprobada"
+      },
+      {
+        "source": 6,
+        "target": 23,
+        "type": "aprobada"
+      },
+      {
+        "source": 8,
+        "target": 23,
+        "type": "aprobada"
+      },
+      {
+        "source": 11,
+        "target": 24,
+        "type": "cursada"
+      },
+      {
+        "source": 19,
+        "target": 25,
+        "type": "cursada"
+      },
+      {
+        "source": 20,
+        "target": 25,
+        "type": "cursada"
+      },
+      {
+        "source": 23,
+        "target": 25,
+        "type": "cursada"
+      },
+      {
+        "source": 13,
+        "target": 25,
+        "type": "aprobada"
+      },
+      {
+        "source": 14,
+        "target": 25,
+        "type": "aprobada"
+      },
+      {
+        "source": 15,
+        "target": 26,
+        "type": "cursada"
+      },
+      {
+        "source": 21,
+        "target": 26,
+        "type": "cursada"
+      },
+      {
+        "source": 17,
+        "target": 27,
+        "type": "cursada"
+      },
+      {
+        "source": 22,
+        "target": 27,
+        "type": "cursada"
+      },
+      {
+        "source": 17,
+        "target": 28,
+        "type": "cursada"
+      },
+      {
+        "source": 9,
+        "target": 28,
+        "type": "aprobada"
+      },
+      {
+        "source": 10,
+        "target": 29,
+        "type": "cursada"
+      },
+      {
+        "source": 22,
+        "target": 29,
+        "type": "cursada"
+      },
+      {
+        "source": 9,
+        "target": 29,
+        "type": "aprobada"
+      },
+      {
+        "source": 18,
+        "target": 30,
+        "type": "cursada"
+      },
+      {
+        "source": 23,
+        "target": 30,
+        "type": "cursada"
+      },
+      {
+        "source": 16,
+        "target": 30,
+        "type": "aprobada"
+      },
+      {
+        "source": 28,
+        "target": 31,
+        "type": "cursada"
+      },
+      {
+        "source": 17,
+        "target": 31,
+        "type": "aprobada"
+      },
+      {
+        "source": 22,
+        "target": 31,
+        "type": "aprobada"
+      },
+      {
+        "source": 28,
+        "target": 32,
+        "type": "cursada"
+      },
+      {
+        "source": 17,
+        "target": 32,
+        "type": "aprobada"
+      },
+      {
+        "source": 19,
+        "target": 32,
+        "type": "aprobada"
+      },
+      {
+        "source": 18,
+        "target": 33,
+        "type": "cursada"
+      },
+      {
+        "source": 27,
+        "target": 33,
+        "type": "cursada"
+      },
+      {
+        "source": 23,
+        "target": 33,
+        "type": "aprobada"
+      },
+      {
+        "source": 24,
+        "target": 34,
+        "type": "cursada"
+      },
+      {
+        "source": 30,
+        "target": 34,
+        "type": "cursada"
+      },
+      {
+        "source": 18,
+        "target": 34,
+        "type": "aprobada"
+      },
+      {
+        "source": 26,
+        "target": 35,
+        "type": "cursada"
+      },
+      {
+        "source": 30,
+        "target": 35,
+        "type": "cursada"
+      },
+      {
+        "source": 20,
+        "target": 35,
+        "type": "aprobada"
+      },
+      {
+        "source": 21,
+        "target": 35,
+        "type": "aprobada"
+      },
+      {
+        "source": 25,
+        "target": 36,
+        "type": "cursada"
+      },
+      {
+        "source": 26,
+        "target": 36,
+        "type": "cursada"
+      },
+      {
+        "source": 30,
+        "target": 36,
+        "type": "cursada"
+      },
+      {
+        "source": 12,
+        "target": 36,
+        "type": "aprobada"
+      },
+      {
+        "source": 20,
+        "target": 36,
+        "type": "aprobada"
+      },
+      {
+        "source": 23,
+        "target": 36,
+        "type": "aprobada"
+      }
+    ]
+  },
+  "progress": {
+    "approvedIds": []
+  }
+}

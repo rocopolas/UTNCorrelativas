@@ -1,0 +1,14 @@
+{
+  "name": "visualizador-correlativas",
+  "version": "1.0.0",
+  "description": "Mapa interactivo de correlativas a partir de PDF",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "express": "^4.21.2",
+    "multer": "^1.4.5-lts.1",
+    "pdf-parse": "^1.1.1"
+  }
+}
