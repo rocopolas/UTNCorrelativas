@@ -127,7 +127,7 @@ async function importPdfPlan(pdfPath) {
 }
 
 app.use(express.json());
-app.use(express.static(path.join(__dirname, "..", "public")));
+app.use(express.static(path.join(__dirname, "client")));
 
 app.get("/api/health", (_req, res) => {
   res.json({

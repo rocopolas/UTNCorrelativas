@@ -1,0 +1,1057 @@
+{
+  "sourceFile": "/home/rocopolas/Documentos/Visualizador_de_correlativas/pdf/Eléctrica - Régimen de Correlatividades y Equivalencias.pdf",
+  "source": "pdftotext",
+  "importedAt": "2026-04-02T04:03:53.746Z",
+  "stats": {
+    "subjectCount": 38,
+    "edgeCount": 116
+  },
+  "subjects": [
+    {
+      "id": 1,
+      "name": "Análisis Matemático I",
+      "prerequisites": {
+        "cursadas": [],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 2,
+      "name": "Algebra y Geometría Analítica",
+      "prerequisites": {
+        "cursadas": [],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 3,
+      "name": "Ingeniería y Sociedad",
+      "prerequisites": {
+        "cursadas": [],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 4,
+      "name": "Sistemas de Representación",
+      "prerequisites": {
+        "cursadas": [],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 5,
+      "name": "Física I",
+      "prerequisites": {
+        "cursadas": [],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 6,
+      "name": "Química General",
+      "prerequisites": {
+        "cursadas": [],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 7,
+      "name": "Integración Eléctrica I",
+      "prerequisites": {
+        "cursadas": [],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 8,
+      "name": "Fundamentos de Informática",
+      "prerequisites": {
+        "cursadas": [],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 9,
+      "name": "Física II",
+      "prerequisites": {
+        "cursadas": [
+          1,
+          5
+        ],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 10,
+      "name": "Probabilidad y Estadística",
+      "prerequisites": {
+        "cursadas": [
+          1,
+          2
+        ],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 11,
+      "name": "Electrotecnia I",
+      "prerequisites": {
+        "cursadas": [
+          1,
+          2,
+          5
+        ],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 12,
+      "name": "Estabilidad",
+      "prerequisites": {
+        "cursadas": [
+          1,
+          2,
+          5
+        ],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 13,
+      "name": "Mecánica Técnica",
+      "prerequisites": {
+        "cursadas": [
+          1,
+          5
+        ],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 14,
+      "name": "Integración Eléctrica II",
+      "prerequisites": {
+        "cursadas": [
+          1,
+          5,
+          7
+        ],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 15,
+      "name": "Inglés I",
+      "prerequisites": {
+        "cursadas": [],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 16,
+      "name": "Análisis Matemático II",
+      "prerequisites": {
+        "cursadas": [
+          1,
+          2
+        ],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 17,
+      "name": "Cálculo Numérico",
+      "prerequisites": {
+        "cursadas": [
+          1,
+          2,
+          5,
+          8
+        ],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 18,
+      "name": "Tecnologías y Ensayos de Materiales Eléctricos",
+      "prerequisites": {
+        "cursadas": [
+          6,
+          9
+        ],
+        "aprobadas": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "id": 19,
+      "name": "Instrumentos y Mediciones Eléctricas",
+      "prerequisites": {
+        "cursadas": [
+          10,
+          11
+        ],
+        "aprobadas": [
+          1,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "id": 20,
+      "name": "Teoría de los Campos",
+      "prerequisites": {
+        "cursadas": [
+          9,
+          16
+        ],
+        "aprobadas": [
+          1,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "id": 21,
+      "name": "Física III",
+      "prerequisites": {
+        "cursadas": [
+          9,
+          16
+        ],
+        "aprobadas": [
+          1,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "id": 22,
+      "name": "Máquinas Eléctricas I",
+      "prerequisites": {
+        "cursadas": [
+          9,
+          11,
+          16,
+          17
+        ],
+        "aprobadas": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "id": 23,
+      "name": "Electrotecnia II",
+      "prerequisites": {
+        "cursadas": [
+          9,
+          11,
+          16
+        ],
+        "aprobadas": [
+          1,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "id": 24,
+      "name": "Termodinámica",
+      "prerequisites": {
+        "cursadas": [
+          9,
+          16
+        ],
+        "aprobadas": [
+          1,
+          2,
+          5
+        ]
+      }
+    },
+    {
+      "id": 25,
+      "name": "Fundamentos para el Análisis de Señales",
+      "prerequisites": {
+        "cursadas": [
+          16,
+          17
+        ],
+        "aprobadas": [
+          1,
+          2
+        ]
+      }
+    },
+    {
+      "id": 26,
+      "name": "Taller Interdisciplinario (*)",
+      "prerequisites": {
+        "cursadas": [
+          27
+        ],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 28,
+      "name": "Economía",
+      "prerequisites": {
+        "cursadas": [],
+        "aprobadas": [
+          3
+        ]
+      }
+    },
+    {
+      "id": 29,
+      "name": "Electrónica I",
+      "prerequisites": {
+        "cursadas": [
+          11
+        ],
+        "aprobadas": [
+          1,
+          5
+        ]
+      }
+    },
+    {
+      "id": 30,
+      "name": "Máquinas Eléctricas II",
+      "prerequisites": {
+        "cursadas": [
+          18,
+          19,
+          20,
+          2223
+        ],
+        "aprobadas": [
+          6,
+          9,
+          10,
+          1115,
+          16
+        ]
+      }
+    },
+    {
+      "id": 31,
+      "name": "Seguridad, Riesgo Eléctrico y Medio Ambiente",
+      "prerequisites": {
+        "cursadas": [
+          6,
+          11,
+          18,
+          20
+        ],
+        "aprobadas": [
+          1,
+          2,
+          5,
+          9,
+          16
+        ]
+      }
+    },
+    {
+      "id": 32,
+      "name": "Instalaciones Eléctricas y Luminotecnia",
+      "prerequisites": {
+        "cursadas": [
+          18,
+          22,
+          23
+        ],
+        "aprobadas": [
+          6,
+          9,
+          11,
+          1415,
+          16
+        ]
+      }
+    },
+    {
+      "id": 33,
+      "name": "Control Automático",
+      "prerequisites": {
+        "cursadas": [
+          23,
+          25
+        ],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 34,
+      "name": "Máquinas Térmicas, Hidráulicas y de Fluido",
+      "prerequisites": {
+        "cursadas": [
+          12,
+          13,
+          24
+        ],
+        "aprobadas": [
+          9,
+          16
+        ]
+      }
+    },
+    {
+      "id": 35,
+      "name": "Legislación",
+      "prerequisites": {
+        "cursadas": [],
+        "aprobadas": [
+          3
+        ]
+      }
+    },
+    {
+      "id": 36,
+      "name": "Electrónica II",
+      "prerequisites": {
+        "cursadas": [
+          37
+        ],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 38,
+      "name": "Sistemas de Potencia",
+      "prerequisites": {
+        "cursadas": [
+          39
+        ],
+        "aprobadas": []
+      }
+    },
+    {
+      "id": 40,
+      "name": "Organización y Administración de Empresas",
+      "prerequisites": {
+        "cursadas": [
+          23,
+          29
+        ],
+        "aprobadas": [
+          11,
+          26
+        ]
+      }
+    },
+    {
+      "id": 41,
+      "name": "Proyecto Final (integradora)",
+      "prerequisites": {
+        "cursadas": [
+          28,
+          30,
+          32,
+          33
+        ],
+        "aprobadas": [
+          18,
+          19,
+          22,
+          2325,
+          26,
+          27
+        ]
+      }
+    }
+  ],
+  "edges": [
+    {
+      "source": 1,
+      "target": 9,
+      "type": "cursada"
+    },
+    {
+      "source": 5,
+      "target": 9,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 10,
+      "type": "cursada"
+    },
+    {
+      "source": 2,
+      "target": 10,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 11,
+      "type": "cursada"
+    },
+    {
+      "source": 2,
+      "target": 11,
+      "type": "cursada"
+    },
+    {
+      "source": 5,
+      "target": 11,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 12,
+      "type": "cursada"
+    },
+    {
+      "source": 2,
+      "target": 12,
+      "type": "cursada"
+    },
+    {
+      "source": 5,
+      "target": 12,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 13,
+      "type": "cursada"
+    },
+    {
+      "source": 5,
+      "target": 13,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 14,
+      "type": "cursada"
+    },
+    {
+      "source": 5,
+      "target": 14,
+      "type": "cursada"
+    },
+    {
+      "source": 7,
+      "target": 14,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 16,
+      "type": "cursada"
+    },
+    {
+      "source": 2,
+      "target": 16,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 17,
+      "type": "cursada"
+    },
+    {
+      "source": 2,
+      "target": 17,
+      "type": "cursada"
+    },
+    {
+      "source": 5,
+      "target": 17,
+      "type": "cursada"
+    },
+    {
+      "source": 8,
+      "target": 17,
+      "type": "cursada"
+    },
+    {
+      "source": 6,
+      "target": 18,
+      "type": "cursada"
+    },
+    {
+      "source": 9,
+      "target": 18,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 18,
+      "type": "aprobada"
+    },
+    {
+      "source": 5,
+      "target": 18,
+      "type": "aprobada"
+    },
+    {
+      "source": 10,
+      "target": 19,
+      "type": "cursada"
+    },
+    {
+      "source": 11,
+      "target": 19,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 19,
+      "type": "aprobada"
+    },
+    {
+      "source": 2,
+      "target": 19,
+      "type": "aprobada"
+    },
+    {
+      "source": 5,
+      "target": 19,
+      "type": "aprobada"
+    },
+    {
+      "source": 9,
+      "target": 20,
+      "type": "cursada"
+    },
+    {
+      "source": 16,
+      "target": 20,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 20,
+      "type": "aprobada"
+    },
+    {
+      "source": 2,
+      "target": 20,
+      "type": "aprobada"
+    },
+    {
+      "source": 5,
+      "target": 20,
+      "type": "aprobada"
+    },
+    {
+      "source": 9,
+      "target": 21,
+      "type": "cursada"
+    },
+    {
+      "source": 16,
+      "target": 21,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 21,
+      "type": "aprobada"
+    },
+    {
+      "source": 2,
+      "target": 21,
+      "type": "aprobada"
+    },
+    {
+      "source": 5,
+      "target": 21,
+      "type": "aprobada"
+    },
+    {
+      "source": 9,
+      "target": 22,
+      "type": "cursada"
+    },
+    {
+      "source": 11,
+      "target": 22,
+      "type": "cursada"
+    },
+    {
+      "source": 16,
+      "target": 22,
+      "type": "cursada"
+    },
+    {
+      "source": 17,
+      "target": 22,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 22,
+      "type": "aprobada"
+    },
+    {
+      "source": 5,
+      "target": 22,
+      "type": "aprobada"
+    },
+    {
+      "source": 9,
+      "target": 23,
+      "type": "cursada"
+    },
+    {
+      "source": 11,
+      "target": 23,
+      "type": "cursada"
+    },
+    {
+      "source": 16,
+      "target": 23,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 23,
+      "type": "aprobada"
+    },
+    {
+      "source": 2,
+      "target": 23,
+      "type": "aprobada"
+    },
+    {
+      "source": 5,
+      "target": 23,
+      "type": "aprobada"
+    },
+    {
+      "source": 9,
+      "target": 24,
+      "type": "cursada"
+    },
+    {
+      "source": 16,
+      "target": 24,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 24,
+      "type": "aprobada"
+    },
+    {
+      "source": 2,
+      "target": 24,
+      "type": "aprobada"
+    },
+    {
+      "source": 5,
+      "target": 24,
+      "type": "aprobada"
+    },
+    {
+      "source": 16,
+      "target": 25,
+      "type": "cursada"
+    },
+    {
+      "source": 17,
+      "target": 25,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 25,
+      "type": "aprobada"
+    },
+    {
+      "source": 2,
+      "target": 25,
+      "type": "aprobada"
+    },
+    {
+      "source": 27,
+      "target": 26,
+      "type": "cursada"
+    },
+    {
+      "source": 3,
+      "target": 28,
+      "type": "aprobada"
+    },
+    {
+      "source": 11,
+      "target": 29,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 29,
+      "type": "aprobada"
+    },
+    {
+      "source": 5,
+      "target": 29,
+      "type": "aprobada"
+    },
+    {
+      "source": 18,
+      "target": 30,
+      "type": "cursada"
+    },
+    {
+      "source": 19,
+      "target": 30,
+      "type": "cursada"
+    },
+    {
+      "source": 20,
+      "target": 30,
+      "type": "cursada"
+    },
+    {
+      "source": 2223,
+      "target": 30,
+      "type": "cursada"
+    },
+    {
+      "source": 6,
+      "target": 30,
+      "type": "aprobada"
+    },
+    {
+      "source": 9,
+      "target": 30,
+      "type": "aprobada"
+    },
+    {
+      "source": 10,
+      "target": 30,
+      "type": "aprobada"
+    },
+    {
+      "source": 1115,
+      "target": 30,
+      "type": "aprobada"
+    },
+    {
+      "source": 16,
+      "target": 30,
+      "type": "aprobada"
+    },
+    {
+      "source": 6,
+      "target": 31,
+      "type": "cursada"
+    },
+    {
+      "source": 11,
+      "target": 31,
+      "type": "cursada"
+    },
+    {
+      "source": 18,
+      "target": 31,
+      "type": "cursada"
+    },
+    {
+      "source": 20,
+      "target": 31,
+      "type": "cursada"
+    },
+    {
+      "source": 1,
+      "target": 31,
+      "type": "aprobada"
+    },
+    {
+      "source": 2,
+      "target": 31,
+      "type": "aprobada"
+    },
+    {
+      "source": 5,
+      "target": 31,
+      "type": "aprobada"
+    },
+    {
+      "source": 9,
+      "target": 31,
+      "type": "aprobada"
+    },
+    {
+      "source": 16,
+      "target": 31,
+      "type": "aprobada"
+    },
+    {
+      "source": 18,
+      "target": 32,
+      "type": "cursada"
+    },
+    {
+      "source": 22,
+      "target": 32,
+      "type": "cursada"
+    },
+    {
+      "source": 23,
+      "target": 32,
+      "type": "cursada"
+    },
+    {
+      "source": 6,
+      "target": 32,
+      "type": "aprobada"
+    },
+    {
+      "source": 9,
+      "target": 32,
+      "type": "aprobada"
+    },
+    {
+      "source": 11,
+      "target": 32,
+      "type": "aprobada"
+    },
+    {
+      "source": 1415,
+      "target": 32,
+      "type": "aprobada"
+    },
+    {
+      "source": 16,
+      "target": 32,
+      "type": "aprobada"
+    },
+    {
+      "source": 23,
+      "target": 33,
+      "type": "cursada"
+    },
+    {
+      "source": 25,
+      "target": 33,
+      "type": "cursada"
+    },
+    {
+      "source": 12,
+      "target": 34,
+      "type": "cursada"
+    },
+    {
+      "source": 13,
+      "target": 34,
+      "type": "cursada"
+    },
+    {
+      "source": 24,
+      "target": 34,
+      "type": "cursada"
+    },
+    {
+      "source": 9,
+      "target": 34,
+      "type": "aprobada"
+    },
+    {
+      "source": 16,
+      "target": 34,
+      "type": "aprobada"
+    },
+    {
+      "source": 3,
+      "target": 35,
+      "type": "aprobada"
+    },
+    {
+      "source": 37,
+      "target": 36,
+      "type": "cursada"
+    },
+    {
+      "source": 39,
+      "target": 38,
+      "type": "cursada"
+    },
+    {
+      "source": 23,
+      "target": 40,
+      "type": "cursada"
+    },
+    {
+      "source": 29,
+      "target": 40,
+      "type": "cursada"
+    },
+    {
+      "source": 11,
+      "target": 40,
+      "type": "aprobada"
+    },
+    {
+      "source": 26,
+      "target": 40,
+      "type": "aprobada"
+    },
+    {
+      "source": 28,
+      "target": 41,
+      "type": "cursada"
+    },
+    {
+      "source": 30,
+      "target": 41,
+      "type": "cursada"
+    },
+    {
+      "source": 32,
+      "target": 41,
+      "type": "cursada"
+    },
+    {
+      "source": 33,
+      "target": 41,
+      "type": "cursada"
+    },
+    {
+      "source": 18,
+      "target": 41,
+      "type": "aprobada"
+    },
+    {
+      "source": 19,
+      "target": 41,
+      "type": "aprobada"
+    },
+    {
+      "source": 22,
+      "target": 41,
+      "type": "aprobada"
+    },
+    {
+      "source": 2325,
+      "target": 41,
+      "type": "aprobada"
+    },
+    {
+      "source": 26,
+      "target": 41,
+      "type": "aprobada"
+    },
+    {
+      "source": 27,
+      "target": 41,
+      "type": "aprobada"
+    }
+  ]
+}

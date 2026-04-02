@@ -2,6 +2,7 @@
   const STORE_KEY = "correlativas-store-v1";
   const REQUIREMENT_PATTERN = /^(?:\d+(?:\s*-\s*\d+)*|-)$/;
   const MAX_PDF_BYTES = 20 * 1024 * 1024;
+  const templatesByFileName = new Map();
 
   function createEmptyStore() {
     return { plan: null, progress: { approvedIds: [] } };
@@ -475,7 +476,7 @@
     }
 
     if (!window.pdfjsLib.GlobalWorkerOptions.workerSrc) {
-      window.pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/4.8.69/pdf.worker.min.js";
+      window.pdfjsLib.GlobalWorkerOptions.workerSrc = "https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.worker.min.js";
     }
 
     const buffer = await file.arrayBuffer();
@@ -552,6 +553,14 @@
     return plan;
   }
 
+  function importPlanObject(plan) {
+    const store = readStore();
+    store.plan = plan;
+    store.progress = { approvedIds: [] };
+    writeStore(store);
+    return plan;
+  }
+
   async function getGraphData() {
     const store = readStore();
     assertPlanLoaded(store);
@@ -609,13 +618,24 @@
       const templates = Array.isArray(payload.templates) ? payload.templates : [];
       const year = Number.isInteger(payload.year) ? payload.year : 2026;
 
+      const normalizedTemplates = templates.map((template) => ({
+        fileName: String(template.fileName),
+        label: template.label ? String(template.label) : String(template.fileName).replace(/\.pdf$/i, ""),
+        year: Number.isInteger(template.year) ? template.year : year,
+        planFileName:
+          typeof template.planFileName === "string" && template.planFileName.trim().length > 0
+            ? template.planFileName
+            : null,
+      }));
+
+      templatesByFileName.clear();
+      for (const template of normalizedTemplates) {
+        templatesByFileName.set(template.fileName, template);
+      }
+
       return {
         year,
-        templates: templates.map((template) => ({
-          fileName: String(template.fileName),
-          label: template.label ? String(template.label) : String(template.fileName).replace(/\.pdf$/i, ""),
-          year: Number.isInteger(template.year) ? template.year : year,
-        })),
+        templates: normalizedTemplates,
         reason: null,
       };
     } catch (_error) {
@@ -636,6 +656,25 @@
   }
 
   async function importTemplateByFileName(fileName) {
+    const templateMeta = templatesByFileName.get(fileName);
+
+    if (templateMeta?.planFileName) {
+      const planResponse = await fetch(
+        `./template-plans/${encodeURIComponent(templateMeta.planFileName)}`,
+        { cache: "no-store" }
+      );
+
+      if (planResponse.ok) {
+        const plan = await planResponse.json();
+        importPlanObject(plan);
+        return {
+          message: "Plantilla importada correctamente",
+          stats: plan.stats,
+          template: { fileName },
+        };
+      }
+    }
+
     const response = await fetch(`./pdf/${encodeURIComponent(fileName)}`, { cache: "no-store" });
     if (!response.ok) {
       throw new Error("La plantilla no existe");
