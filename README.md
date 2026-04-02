@@ -20,6 +20,22 @@ Abrir `http://localhost:3000`.
 
 ## API
 
-- `POST /api/import` (multipart con campo `pdf`)
+- `GET /api/health`
+- `GET /api/templates`
+- `POST /api/import` (multipart con campo `pdf`, solo archivos PDF, max 20MB)
+- `POST /api/import-template` body JSON `{ "fileName": string }`
 - `GET /api/graph`
+- `GET /api/progress`
+- `PUT /api/progress` body JSON `{ "approvedIds": number[] }`
 - `POST /api/progress/toggle` body JSON `{ "subjectId": number }`
+- `GET /api/subjects/:subjectId`
+- `DELETE /api/reset`
+
+Todas las respuestas de error tienen formato:
+
+```json
+{
+	"error": "mensaje",
+	"detail": "detalle opcional"
+}
+```
