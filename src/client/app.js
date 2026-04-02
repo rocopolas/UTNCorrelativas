@@ -459,11 +459,11 @@ function renderTable(data) {
 
     const row = document.createElement("tr");
     row.innerHTML = `
-      <td>${subject.id}</td>
-      <td>${escapeHtml(subject.name)}</td>
-      <td><span class="state-chip ${stateClass(state)}">${stateLabel(state)}</span></td>
-      <td>${prereq.length ? prereq.join(", ") : "Ninguna"}</td>
-      <td><button class="table-action" ${state === "locked" ? "disabled" : ""}>${state === "approved" ? "Quitar" : "Marcar"}</button></td>
+      <td data-label="ID">${subject.id}</td>
+      <td data-label="Materia">${escapeHtml(subject.name)}</td>
+      <td data-label="Estado"><span class="state-chip ${stateClass(state)}">${stateLabel(state)}</span></td>
+      <td data-label="Correlativas">${prereq.length ? prereq.join(", ") : "Ninguna"}</td>
+      <td data-label="Accion"><button class="table-action" ${state === "locked" ? "disabled" : ""}>${state === "approved" ? "Quitar" : "Marcar"}</button></td>
     `;
 
     row.addEventListener("click", () => {

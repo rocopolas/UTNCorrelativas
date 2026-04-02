@@ -461,13 +461,57 @@ button:disabled {
   }
 
   table {
-    min-width: 640px;
+    min-width: 0;
+    width: 100%;
     font-size: 0.88rem;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tbody {
+    display: grid;
+    gap: 0.6rem;
+    padding: 0.4rem;
+  }
+
+  tbody tr {
+    display: grid;
+    gap: 0.4rem;
+    padding: 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.68);
+  }
+
+  body[data-theme="dark"] tbody tr {
+    background: rgba(15, 25, 22, 0.7);
   }
 
   th,
   td {
     padding: 0.45rem;
+  }
+
+  td {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    gap: 0.45rem;
+    align-items: center;
+    border-bottom: 0;
+    padding: 0;
+  }
+
+  td::before {
+    content: attr(data-label);
+    font-weight: 700;
+    opacity: 0.78;
+    font-size: 0.82rem;
+  }
+
+  .table-action {
+    width: 100%;
   }
 
   .zoom-feedback {
